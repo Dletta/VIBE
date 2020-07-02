@@ -1,0 +1,17 @@
+{
+  "name": "vibe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gun": "^0.2019.930"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run server",
+    "server": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
+}

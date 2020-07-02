@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe</title>
+</head>
+<body>
+    <form id="account-create">
+        <input id="username" placeholder="Username">
+        <input id="sign_up" type="submit" value="Sign Up">
+    </form>
+    <form id="account-login">
+        <input id="priv-key" placeholder="Private Key">
+    </form>
+
+    <br>
+    
+    <button id="account-logout">Logout</button>
+    <button id="debug-print">Console</button>
+
+    <br>
+
+    <form id="vibe-link">
+        <input id="paste-vibe-link" placeholder="Paste Vibe LInk">
+    </form>
+
+    <form id="chat-form">
+        <input id="chat-box" placeholder="Chat Here...">
+    </form>
+    <ul id="message-list">
+        <li id="message-view"></li>
+    </ul>
+    
+    <script src="src/lib/gun.js"></script>
+    <script src="src/lib/sea.js"></script>
+    <script src="src/lib/iris.js"></script>
+    <script src="src/lib/jquery.js"></script>
+    
+    <script type="module" src="src/js/main.js"></script>  
+</body>
+</html>
