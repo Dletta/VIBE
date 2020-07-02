@@ -44,7 +44,10 @@ setInterval(logData, 20000); //Log gun graph every 20 secs
 
 const view = path.join(__dirname, 'index.html');
 
-app.use(express.static('view'));
-app.get('*', function(_, res) {
-  res.sendFile(view);
+app.get('/', function(req, res) {
+  res.sendFile(view); //serve main page
 });
+
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, req.url)); //serve resources
+})
